@@ -3,7 +3,7 @@ FROM ubuntu:trusty
 MAINTAINER codemeow codemeow@yahoo.com
 
 RUN cp /etc/apt/sources.list /etc/apt/sources.list.raw
-ADD https://github.com/codemeow5/Scripts/raw/master/ubt_1404_aliyun_sources.list /etc/apt/sources.list
+ADD https://github.com/codemeow5/HowTo/raw/master/Assets/ubt_1404_aliyun_sources.list /etc/apt/sources.list
 RUN dpkg --add-architecture i386
 RUN apt-get update && apt-get install wget -y
 
